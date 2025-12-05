@@ -5,10 +5,7 @@ The `julia_segfault.R ` is changed too, the problem is `LD_LIBRARY_PATH`, so wit
 
 
 
-# How to run it
 ``` shell
-cd db-benchmark-julia
-export JULIA_PROJECT=$(pwd)
 (base) a@sirius:~/devel/julia/db-benchmark-julia$ Rscript julia_segfault.R 
 ┌ Warning: Julia started with single thread, to enable multithreaded functionalities in InMemoryDatasets.jl start Julia with multiple threads.
 └ @ InMemoryDatasets ~/.julia/packages/InMemoryDatasets/aSzMi/src/InMemoryDatasets.jl:208
@@ -66,6 +63,19 @@ nickname       How About a Twenty-Six
 ```
 
 ```julia
-(base) a@sirius:~/devel/julia/db-benchmark-julia$ julia --version
-julia version 1.12.2
+versioninfo()
+Julia Version 1.12.2
+Commit ca9b6662be4 (2025-11-20 16:25 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 16 × AMD Ryzen 7 PRO 4750U with Radeon Graphics
+  WORD_SIZE: 64
+  LLVM: libLLVM-18.1.7 (ORCJIT, znver2)
+  GC: Built with stock GC
+Threads: 1 default, 1 interactive, 1 GC (on 16 virtual cores)
+Environment:
+  JULIA_PROJECT = /home/a/devel/julia/db-benchmark-julia
+
 ```
