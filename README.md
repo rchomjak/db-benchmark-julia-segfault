@@ -33,7 +33,13 @@ The `julia_segfault.R ` is changed too, the problem is `LD_LIBRARY_PATH`, so wit
 
 
 
-# Info about R, and Julia
+# Info about R, and Julia, system
+```
+uname -a
+Linux sirius 6.12.57+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.57-1 (2025-11-05) x86_64 GNU/Linux
+```
+cat /etc/debian_version 
+13.2
 ```R
 (base) a@sirius:~/devel/julia/db-benchmark-julia$ R
 
