@@ -6,6 +6,9 @@ The `julia_segfault.R ` is changed too, the problem is `LD_LIBRARY_PATH`, so wit
 
 
 ``` shell
+libunwind8/stable,now 1.8.1-0.1 amd64 [installed,automatic]
+  library to determine the call-chain of a program - runtime
+
 (base) a@sirius:~/devel/julia/db-benchmark-julia$ Rscript julia_segfault.R 
 ┌ Warning: Julia started with single thread, to enable multithreaded functionalities in InMemoryDatasets.jl start Julia with multiple threads.
 └ @ InMemoryDatasets ~/.julia/packages/InMemoryDatasets/aSzMi/src/InMemoryDatasets.jl:208
